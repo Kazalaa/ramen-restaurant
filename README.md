@@ -1,5 +1,7 @@
 # ramen-restaurant
 
+Where the design come from : [Inspiration](https://www.behance.net/gallery/119709339/RAMEN-RESTURANT-LANDING-PAGE-DESIGN).It's made by PADMINI BARIK, found in behance.
+
 
 This is a solution to the [Hero section UI challenge from the "Le designer du web"](https://www.youtube.com/channel/UCMFbNXUkjSUJ6WC20tGTzJg). "Le designer du web" send a challenge every week on his discord that help you improve your coding skills by building realistic projects. 
 
@@ -10,6 +12,7 @@ This is a solution to the [Hero section UI challenge from the "Le designer du we
   - [Links](#links)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
+  - [Resources](#resources)
 
 
 ## Overview
@@ -24,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://kazalaa.github.io/ramen-restaurant/)
+- Live Site URL: [Live Site](https://kazalaa.github.io/ramen-restaurant/)
 
 
 ### Built with
@@ -39,3 +42,10 @@ Users should be able to:
 
 I need to focus more on the CSS. I think the HTML part is good, but I had a lot of problems in the CSS part, for the responsive mostly.
 
+https://www.youtube.com/watch?v=_jOqYe0eFqY&t=0s
+
+### Resources
+
+This help me for the smoke : [YT](https://www.youtube.com/watch?v=_jOqYe0eFqY&t=0s)
+This help me for the button order : [YT](https://www.youtube.com/watch?v=C5zlttsDOFM&t=241s)
+This help me for the active tab : [YT](https://www.youtube.com/watch?v=BI3kNsTruWo)
