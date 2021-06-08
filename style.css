@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Lemon;
+    src: url(./font/LemonMilk.otf);
+}
+body{
+    background-color: #ED3C20;
+}
+a{
+    text-decoration: none;
+}
+.container-line{
+    position: absolute;
+    color: #EBCEBB;
+    border-radius: 15px;
+    border: 2px solid #EBCEBB;
+    padding: 15px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container{
+    position: relative;
+    background-color: #EBE0CE;
+    border-radius: 15px; 
+}
+
+/*header*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 60px;
+}
+.logo{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: #ED3C20;
+    font-family: Lemon;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.letter{
+    position: absolute;
+    font-size: 25px;
+}
+.nori-N{
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.nori-O{
+    top:25%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.nori-R{
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.nori-I{
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+/* nav links */
+.list{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.nav-links{
+    position: relative;
+    display: flex;
+    z-index: 10;
+}
+/* underline links */
+.header-a{
+    display: block;
+    color: #2E2B28;
+    padding: 50px;
+}
+.header-a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+}
+
+/* active tab */
+.header-a:hover::after{
+    width:50%;
+    transition: width 0.3s;
+}
+.active::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+}
+.active:hover::after{
+    width:50%;
+    transition: width 0.3s;
+}
+.active{
+    color: #ED3C20;
+    opacity: 80%;
+    display: block;
+    padding: 50px;
+}
+/*main*/
+.grid-container{
+    /*position: relative;*/
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 500px;
+    padding-top: 40px;
+}
+.left-infos{
+    /*position: absolute;*/
+    grid-column: 1;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.japanese-title{
+    color: #ED3C20;
+    font-size:55px;
+}
+.french-title{
+    text-transform: uppercase;
+    color:#2E2B28;
+    font-size:45px;
+    font-family: Lemon;
+    line-height: 50px;
+}
+span{
+    color: #ED3C20;
+}
+.ramen-infos{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #2E2B28;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:normal;
+    margin-right: 10px;
+}
+/*button*/
+.card{
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.content{
+    padding: 10px;
+    width: 100%;
+    min-height: 50px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #ED3C20;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+}
+.button-text{
+    opacity: 80%;
+}
+
+.content:hover{
+    transform: translate(10px, -10px);
+}
+.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #2E2B28;
+    border-radius: 5px;
+    top:0;
+    z-index: -1;
+}
+/* ramen and smoke animation*/
+.noodle-img{
+    grid-column: 2;
+}
+.ramen{
+    height: 100%;
+    transform: translate(25%, -50%);
+}
+.vapour{
+    position: relative;
+    display: flex;
+    top: 15%;
+    left: 25%;
+}
+.vapour span{
+    position: relative;
+    display: block;
+    min-width: 8px;
+    height: 120px;
+    background: white;
+    z-index: 2;
+    margin: 0 5px 100px;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity:0;
+    filter:blur(5px);
+    animation-delay: calc(var(--i)* -0.5s);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0) scaleX(1);
+        opacity:0;
+    }
+    15%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        transform: translateY(-150px) scaleX(5);
+    }
+    95%{
+        opacity:0;
+    }
+    100%{
+        transform: translateY(-300px) scaleX(10);
+    }
+}
+/*footer*/
+footer{
+    display:flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 100px;
+}
+
+.social-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.footer-a{
+    color: #ED3C20;
+    padding: 20px;
+}
+.footer-line{
+    position: absolute;
+    height: 1px;
+    width: 200%;
+    left: 100%;
+    background-color:#ED3C20;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/*responsive*/
+@media (min-width: 320px) and (max-width: 680px){
+    .main-container{
+        min-width: 90vw;
+        min-height: 90vh;
+    }
+    .nav-links{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        height: 600px;
+    } 
+    .left-infos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .french-title{
+        text-align: center;
+    }
+    .ramen-infos{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .card{
+        margin-top: 10px;
+    }
+    .noodle-img{
+        width:60%;
+        height: 50%;
+        visibility: collapse;
+        display: none;
+    }
+    footer{
+        display: flex;
+        margin-top: 60px;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+    .footer-line {
+         left: 0px;
+         top: -100%;
+           width: 100%;
+        }
+}
+
+@media (min-width: 680px) and (max-width: 1200px){
+    .main-container{
+        min-width: 90vw;
+        min-height: 90vh;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        height: 600px;
+    } 
+    .left-infos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .french-title{
+        text-align: center;
+    }
+    .ramen-infos{
+        text-align: center;
+        margin-right: 0;
+    }
+    .noodle-img{
+        width:60%;
+        height: 50%;
+        visibility: collapse;
+        display: none;
+    }
+    footer{
+        display: flex;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+    .footer-line{
+        left: 0;
+        top: -100%;
+        width: 105%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-container{
+        min-width: 90vw;
+        min-height: 90vh;
+    }
+}
