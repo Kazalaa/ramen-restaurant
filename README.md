@@ -43,7 +43,6 @@ Users should be able to:
 
 I need to focus more on the CSS. I think the HTML part is good, but I had a lot of problems in the CSS part, for the responsive mostly.
 
-https://www.youtube.com/watch?v=_jOqYe0eFqY&t=0s
 
 ### Resources
 
