@@ -1,6 +1,7 @@
 # ramen-restaurant
 
-Where the design come from : [Inspiration](https://www.behance.net/gallery/119709339/RAMEN-RESTURANT-LANDING-PAGE-DESIGN).It's made by PADMINI BARIK, found in behance.
+Where the design come from : [Inspiration](https://www.behance.net/gallery/119709339/RAMEN-RESTURANT-LANDING-PAGE-DESIGN).
+- It's made by PADMINI BARIK, in behance. Special thanks to her, and to the japanese food !🍜🍜🍜
 
 
 This is a solution to the [Hero section UI challenge from the "Le designer du web"](https://www.youtube.com/channel/UCMFbNXUkjSUJ6WC20tGTzJg). "Le designer du web" send a challenge every week on his discord that help you improve your coding skills by building realistic projects. 
