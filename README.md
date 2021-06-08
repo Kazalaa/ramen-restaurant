@@ -46,6 +46,6 @@ https://www.youtube.com/watch?v=_jOqYe0eFqY&t=0s
 
 ### Resources
 
-This help me for the smoke : [YT](https://www.youtube.com/watch?v=_jOqYe0eFqY&t=0s)
-This help me for the button order : [YT](https://www.youtube.com/watch?v=C5zlttsDOFM&t=241s)
-This help me for the active tab : [YT](https://www.youtube.com/watch?v=BI3kNsTruWo)
+- This help me for the smoke : [YT](https://www.youtube.com/watch?v=_jOqYe0eFqY&t=0s) 
+- This help me for the button order : [YT](https://www.youtube.com/watch?v=C5zlttsDOFM&t=241s)
+- This help me for the active tab : [YT](https://www.youtube.com/watch?v=BI3kNsTruWo)
